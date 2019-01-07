@@ -8,7 +8,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="App container-fluid">
         <BrowserRouter>
           <Switch>
             <Route exact path="/" component={Home} />
