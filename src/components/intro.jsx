@@ -6,9 +6,9 @@ class Intro extends React.Component {
       <React.Fragment>
           <div id="hero">
            <h1>Michelle Falzon</h1>
-           <p>
+           <span className="slogan">
                Catchy Slogan
-           </p>
+           </span>
           </div>
       </React.Fragment>
     )

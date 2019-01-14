@@ -24,9 +24,6 @@ class Menu extends React.Component {
                 </button>
                 <div className={classDropdownMenu + "collapse navbar-collapse"} id="navbarNav">
                     <ul className="navbar-nav"> 
-                        {/* <li className="nav-item">
-                            <a className="navbar-brand" href="/">Ellezon</a>
-                        </li> */}
                         <li className="nav-item">
                             <a className="nav-link" href="/#about">About</a>
                         </li>

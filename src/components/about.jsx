@@ -12,11 +12,11 @@ class About extends React.Component {
                             <h1> About</h1>
                             <p>Hello! I am an artificial intelligence graduate from the University of Malta.
                                 I am a hard working individual who always strives to improve my skills.
-                                I have worked in the iGaming industry for almost two years.
-                                Throughout my time at Raketech, I learnt to adapt quickly, think creatively and
-                                manage a team. Within a few months inthe company, I was leading a small team with various skills and backgrounds.
+                                I have worked in the iGaming industry for almost two years.</p>
+                            <p>Throughout my time at Raketech, I learnt to adapt quickly, think creatively and
+                                manage a team. Within a few months in the company, I was leading a small team with various skills and backgrounds.
                                 Our aim was to improve a small network of sites by making them engaging to our target audience,
-                                fast, responsive and better their overall SEO performance.</p>
+                                fast, responsive and increase their overall SEO performance.</p>
                             <p>The rest of my experience, though unrelated to my line of work,
                                 helped me understand the qualities needed to be a good leader and team player.
                                 I have also tried my hand at voluntary work which was incredibly rewarding.

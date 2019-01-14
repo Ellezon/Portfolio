@@ -1,57 +1,76 @@
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Advent Pro', sans-serif;
     color: #622f8a;
     font-weight: bold;
 }
 
-body{
-    font-family: "Segoe UI", "Roboto"
+body {
+    font-family: "Segoe UI", "Roboto";
+    cursor: url('../../img/cursor.png'), auto;
 }
-.container-fluid{
+
+.container-fluid {
     padding: 0
 }
 
-.blue-section
-{
-    background: rgb(1, 7, 20);
-    box-shadow: 0px 1px 19px 1px #1e1e1e;
+.blue-section {
+    background: #010714;
+    box-shadow: 0px 1px 8px 0px #1e1e1e;
 }
-@media (min-width: 1050px)
-{
-    .container
-    {
+
+@media (min-width: 1050px) {
+    .container {
         max-width: 1024px;
     }
 }
 
-@media (min-width: 576px){
-.container {
-    max-width: 700px;
+@media (max-width: 991px) {
+    .container {
+        max-width: 700px;
+    }
 }
+
+.btn-primary {
+    background-color: #622f8a;
+    border: none
 }
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:focus:active {
+    background: #472264;
+    box-shadow: none;
+}
+
 /* Navbar styling */
-.navbar
-{
+.navbar {
     justify-content: center
 }
-.nav-item
-{
+
+.nav-item {
     font-family: 'Advent Pro', sans-serif;
 }
-.collapse.navbar-collapse{
+
+.collapse.navbar-collapse {
     flex-grow: 0;
 }
-@media(max-width: 768px)
-{
-    .navbar{
+
+@media(max-width: 576px) {
+    .navbar {
         justify-content: space-between;
     }
 }
+
 /* End Navbar styling */
 
 /* Intro styling */
-#hero
-{
+#hero {
     background-image: url('../../img/img.png');
     height: 200px;
     background-size: cover;
@@ -62,86 +81,175 @@ body{
     align-items: center;
     background-attachment: fixed;
 }
-#hero h1{
-    font-size: 85px
+
+#hero h1 {
+    font-size: 85px;
+    text-shadow: 4px -1px 8px #01071469;
 }
+
+#hero .slogan {
+    align-self: flex-end;
+    font-size: 20px;
+}
+
+@media(max-width: 576px) {
+    #hero {
+        height: auto;
+        background-size: cover;
+        display: block;
+    }
+}
+
 /* End Intro styling */
 
 /* About styling */
-#about
-{
+#about {
     margin-top: 15px;
     text-align: justify;
 }
-#about .img-wrapper{
+
+#about .img-wrapper {
     align-items: center;
     display: flex;
     justify-content: center;
 }
-#about img
-{
-    max-width: 250px;
+
+#about img {
+    max-width: 100%;
     border-radius: 150px;
     border: 4px solid #622f8a;
-    box-shadow: 0px 1px 13px 0px #1e1e1ead;
+    box-shadow: 0px 1px 8px 0px #1e1e1e;
 }
-@media(max-width: 768px)
-{
-    #about img
-    {
+
+@media(max-width: 768px) {
+    #about img {
         max-width: 200px;
     }
 }
+
 /* End About styling */
 
 
 /* Highlights styling */
-#highlights
-{
+#highlights {
     padding: 30px 0;
     text-align: center;
     justify-content: center;
     margin: 15px auto;
 }
 
-#highlights img{
+#highlights img {
     width: 60px;
 }
-#highlights .carousel{
+
+#highlights .carousel {
     width: 100%;
 }
-#highlights .carousel-caption
-{
+
+#highlights .carousel-caption {
     position: relative;
     right: 0%;
     left: 0%;
 }
-#highlights .award-caption
-{
+
+#highlights .carousel-indicators {
+    bottom: -20px;
+}
+
+#highlights .award-caption {
     color: #fff;
     font-family: 'Advent Pro', sans-serif;
     font-size: 20px;
     line-height: 1;
-    font-weight: bold; 
+    font-weight: bold;
     margin-top: 20px;
     margin-bottom: 0;
 }
+
+@media(max-width: 576px) {
+    #highlights .award-caption {
+        margin-right: auto;
+        margin-left: auto;
+        width: 70%;
+    }
+}
+
 /* End Highlights styling */
 
+/* CV styling */
+#cv .Collapsible__trigger {
+    font-family: 'Advent Pro', sans-serif;
+    color: #622f8a;
+    font-weight: bold;
+    font-size: 24px
+}
+
+#cv .Collapsible__trigger:hover {
+    cursor: pointer;
+}
+
+#cv h4 {
+    background: #010714;
+    color: #fff;
+    padding: 10px;
+    box-shadow: -1px 2px 8px 0px #72717152;
+    margin-bottom: 0px;
+}
+
+#cv .Collapsible__contentOuter {
+    background: #f8f8f8;
+    box-shadow: -1px 2px 8px 0px #72717152
+}
+
+#cv .flex-row {
+    margin: 15px 0px;
+    width: 100%
+}
+
+#cv h5 {
+    margin-top: 8px
+}
+
+@media(min-width: 767px) {
+    #cv span {
+        display: block;
+    }
+}
+@media(max-width: 767px) {
+    #cv h5 span{
+        float: right
+    }
+
+}
+
+#cv ul {
+    list-style: none;
+    padding-left: 20px
+}
+
+#cv ul li::before {
+    content: "\2022";
+    color: #622f8a;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    font-size: 22px;
+}
+
+/* End CV styling */
+
 /* Contact styling */
-#contact
-{
+#contact {
     padding: 10px;
     text-align: center;
     justify-content: center;
     margin-top: 15px;
 }
-#contact img
-{
+
+#contact img {
     margin: 10px;
     opacity: 0.5;
 }
+
 /* End Contact styling */
-
-
-

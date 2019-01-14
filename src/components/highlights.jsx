@@ -51,19 +51,19 @@ class Highlights extends React.Component {
                 {this.state.width > 768 &&
                     <React.Fragment>
                         <Fade left opposite cascade>
-                        <div className="col-sm-4 col-md-3">
+                        <div className="col-4 col-md-3">
                             <img alt="trophy" src="/img/trophy.png" />
                             <p className="award-caption">Raketech Ownership Award</p>
                         </div>
                         </Fade>
                         <Fade left opposite cascade>
-                        <div className="col-sm-4 col-md-3">
+                        <div className="col-4 col-md-3">
                             <img alt="podium" src="/img/podium.png" />
                             <p className="award-caption">Raketech Innovation Day Winning Team</p>
                         </div>
                         </Fade>
                         <Fade left opposite cascade>
-                        <div className="col-sm-4 col-md-3">
+                        <div className="col-4 col-md-3">
                             <img alt="medal" src="/img/medal.png" />
                             <p className="award-caption">Raketech Teamwork Award</p>
                         </div>
