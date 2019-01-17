@@ -5,12 +5,12 @@ import CvSection from './cvSection';
 class Cv extends React.Component {
     render() {
         return (
-            <React.Fragment>
+            <div id="cv-wrapper">
                 <div className="container" id="cv">
                     <div className="row">
-                        <div className="d-flex flex-column">
-                            <h1>Curriculum Vitae<a className="float-right btn btn-primary align-self-center" href="/docs/cv 2018.docx">Download CV</a></h1>
-                            <Collapsible open trigger={<h4>Work Experience</h4>}>
+                        <div className="d-flex flex-column col-12">
+                            <h1 className="section-title">Curriculum Vitae<a className="float-right btn btn-primary align-self-center" href="/docs/cv 2018.docx">Download CV</a></h1>
+                            <Collapsible triggerWhenOpen={<h4>Work Experience<i className="arrow up"></i></h4>} open trigger={<h4>Work Experience<i className="arrow down"></i></h4>}>
                                 <CvSection
                                     time="09/2017 - Present"
                                     company="Raketech"
@@ -84,7 +84,7 @@ class Cv extends React.Component {
                                     ]}
                                 />
                             </Collapsible>
-                            <Collapsible trigger={<h4>Education and Training</h4>}>
+                            <Collapsible triggerWhenOpen={<h4>Education and Training<i className="arrow up"></i></h4>} trigger={<h4>Education and Training<i className="arrow down"></i></h4>}>
                                 <CvSection
                                     time="2018"
                                     company="StreetHR (Malta)"
@@ -187,7 +187,7 @@ class Cv extends React.Component {
                                     ]}
                                 />
                             </Collapsible>
-                            <Collapsible trigger={<h4>Hobbies</h4>}>
+                            <Collapsible triggerWhenOpen={<h4>Hobbies<i className="arrow up"></i></h4>}  trigger={<h4>Hobbies<i className="arrow down"></i></h4>}>
                                 <CvSection
                                         time="2008 - 2017"
                                         company=""
@@ -213,7 +213,7 @@ class Cv extends React.Component {
                                     list={[]}
                                 />
                             </Collapsible>
-                            <Collapsible trigger={<h4>Voluntary Work</h4>}>
+                            <Collapsible triggerWhenOpen={<h4>Voluntary Work<i className="arrow up"></i></h4>} trigger={<h4>Voluntary Work<i className="arrow down"></i></h4>}>
                                 <CvSection
                                     time="07/2013 – 09/2013"
                                     company="Nature Trust Malta (Malta)"
@@ -253,7 +253,7 @@ class Cv extends React.Component {
                         </div>
                     </div>
                 </div>
-            </React.Fragment >
+            </div>
         )
     }
 }

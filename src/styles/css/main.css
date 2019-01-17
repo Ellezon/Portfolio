@@ -8,7 +8,10 @@ h6 {
     color: #622f8a;
     font-weight: bold;
 }
-
+h1.section-title
+{
+    text-shadow: 4px -1px 8px #01071469;
+}
 body {
     font-family: "Segoe UI", "Roboto";
     cursor: url('../../img/cursor.png'), auto;
@@ -18,6 +21,9 @@ body {
     padding: 0
 }
 
+.container{
+    margin-top: 15px;
+}
 .blue-section {
     background: #010714;
     box-shadow: 0px 1px 8px 0px #1e1e1e;
@@ -47,6 +53,8 @@ body {
     background: #472264;
     box-shadow: none;
 }
+
+
 
 /* Navbar styling */
 .navbar {
@@ -104,7 +112,6 @@ body {
 
 /* About styling */
 #about {
-    margin-top: 15px;
     text-align: justify;
 }
 
@@ -135,7 +142,7 @@ body {
     padding: 30px 0;
     text-align: center;
     justify-content: center;
-    margin: 15px auto;
+    margin: 15px auto 0px auto;
 }
 
 #highlights img {
@@ -177,6 +184,33 @@ body {
 /* End Highlights styling */
 
 /* CV styling */
+#cv-wrapper{
+    padding: 15px 0px;
+    background: url('../../img/img.png');
+    background-repeat: no-repeat;
+}
+#cv h1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#cv i {
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+#cv .up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+#cv .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
 #cv .Collapsible__trigger {
     font-family: 'Advent Pro', sans-serif;
     color: #622f8a;
@@ -191,16 +225,20 @@ body {
 #cv h4 {
     background: #010714;
     color: #fff;
-    padding: 10px;
+    padding: 10px 15px;
     box-shadow: -1px 2px 8px 0px #72717152;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
     margin-bottom: 0px;
 }
 
-#cv .Collapsible__contentOuter {
-    background: #f8f8f8;
-    box-shadow: -1px 2px 8px 0px #72717152
+#cv .Collapsible 
+{
+    margin-bottom: 15px;
 }
-
 #cv .flex-row {
     margin: 15px 0px;
     width: 100%
@@ -215,11 +253,11 @@ body {
         display: block;
     }
 }
+
 @media(max-width: 767px) {
-    #cv h5 span{
+    #cv h5 span {
         float: right
     }
-
 }
 
 #cv ul {
@@ -236,7 +274,13 @@ body {
     margin-left: -1em;
     font-size: 22px;
 }
-
+#cv .Collapsible__contentOuter {
+    background: #ffffffbf;
+}
+#cv .is-open .Collapsible__contentOuter{
+    border: 2px solid #010714;
+    border-top: 0
+}
 /* End CV styling */
 
 /* Contact styling */
@@ -244,7 +288,6 @@ body {
     padding: 10px;
     text-align: center;
     justify-content: center;
-    margin-top: 15px;
 }
 
 #contact img {

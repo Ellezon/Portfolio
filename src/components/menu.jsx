@@ -1,4 +1,6 @@
 import React from 'react';
+import AnchorLink from 'react-anchor-link-smooth-scroll'
+
 
 class Menu extends React.Component {
     constructor(props) {
@@ -6,13 +8,18 @@ class Menu extends React.Component {
         this.state = {
           isToggleOn: false
         };
+        this.showDropdown = this.showDropdown.bind(this);
       }
-      showDropdown(e) {
+    
+    showDropdown(e) {
         e.preventDefault();
         this.setState(prevState => ({
           isToggleOn: !prevState.isToggleOn
         }));
       }
+
+       
+
     render() {
         let classDropdownMenu = this.state.isToggleOn ? 'show ' : ''
         return (
@@ -25,16 +32,29 @@ class Menu extends React.Component {
                 <div className={classDropdownMenu + "collapse navbar-collapse"} id="navbarNav">
                     <ul className="navbar-nav"> 
                         <li className="nav-item">
-                            <a className="nav-link" href="/#about">About</a>
+                            {window.location.pathname === "/" && 
+                                <AnchorLink className="nav-link" href="#about">About</AnchorLink>}
+                            {window.location.pathname === "/portfolio" && 
+                                <a className="nav-link" href="/#about">About</a>}
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/#cv">CV</a>
+                            {window.location.pathname === "/" && 
+                                <AnchorLink className="nav-link" href="#cv">CV</AnchorLink>}
+                            {window.location.pathname === "/portfolio" && 
+                                <a className="nav-link" href="#cv">CV</a>}
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/portfolio">Portfolio</a>
+                            {window.location.pathname === "/portfolio" && 
+                                <AnchorLink className="nav-link" href="#portfolio">Portfolio</AnchorLink>
+                            }
+                            {window.location.pathname === "/" &&
+                                <a className="nav-link" href="/portfolio">Portfolio</a>}
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/#contact">Contact</a>
+                            {window.location.pathname === "/" &&
+                                <AnchorLink className="nav-link" href="#contact">Contact</AnchorLink>}
+                            {window.location.pathname === "/portfolio" && 
+                                <a className="nav-link" href="#contact">Contact</a>}
                         </li>
                     </ul>
                 </div>

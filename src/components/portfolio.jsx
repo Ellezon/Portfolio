@@ -8,7 +8,13 @@ class Portfolio extends React.Component {
         <React.Fragment>
         <Intro/>
         <Menu/>
-        <h1>Portfolio</h1>
+        <div className="container">
+          <div className="row">
+            <div className="d-flex flex-column col-12">
+              <h1 id="portfolio" className="section-title">Portfolio</h1>
+            </div>
+          </div>
+        </div>
         </React.Fragment>
     );
   }

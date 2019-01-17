@@ -9,7 +9,7 @@ class About extends React.Component {
                 <div className="container" id="about">
                     <div className="row">
                         <div className="col-12 col-md-8 col-lg-9 float-left">
-                            <h1> About</h1>
+                            <h1 className="section-title"> About</h1>
                             <p>Hello! I am an artificial intelligence graduate from the University of Malta.
                                 I am a hard working individual who always strives to improve my skills.
                                 I have worked in the iGaming industry for almost two years.</p>
