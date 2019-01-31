@@ -36,7 +36,7 @@ class Highlights extends React.Component {
                             <CarouselItem itemId="2">
                                 <img alt="podium" src="/img/podium.png" />
                                 <CarouselCaption>
-                                    <p className="award-caption">Raketech Innovation Day Winning Team</p>
+                                    <p className="award-caption">Raketech Hackathon Winning Team</p>
                                 </CarouselCaption>
                             </CarouselItem>
                             <CarouselItem itemId="3">

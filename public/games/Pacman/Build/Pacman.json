@@ -1,0 +1,13 @@
+{
+"companyName": "AFK",
+"productName": "PacMan",
+"dataUrl": "Pacman.data.unityweb",
+"wasmCodeUrl": "Pacman.wasm.code.unityweb",
+"wasmFrameworkUrl": "Pacman.wasm.framework.unityweb",
+"TOTAL_MEMORY": 117440512,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"}
+}

@@ -9,7 +9,7 @@ class Cv extends React.Component {
                 <div className="container" id="cv">
                     <div className="row">
                         <div className="d-flex flex-column col-12">
-                            <h1 className="section-title">Curriculum Vitae<a className="float-right btn btn-primary align-self-center" href="/docs/cv 2018.docx">Download CV</a></h1>
+                            <h1 className="section-title">Curriculum Vitae<a className="float-right btn btn-primary align-self-center" href="/docs/CV_2019.pdf">Download CV</a></h1>
                             <Collapsible triggerWhenOpen={<h4>Work Experience<i className="arrow up"></i></h4>} open trigger={<h4>Work Experience<i className="arrow down"></i></h4>}>
                                 <CvSection
                                     time="09/2017 - Present"
@@ -17,15 +17,15 @@ class Cv extends React.Component {
                                     title="Web Developer and Team Performance Coordinator"
                                     list={[
                                         "Languages used: React, Vanilla Javascript with jQuery, SQL, PHP, HTML and CSS",
-                                        "Developing an internal tool for simplifying the visualization of site metrics and SEO health and recommending websites from which purchased links would improve the sites overall rank metrics. This involved the use of third party APIs, React libraries, messaging queues (RabbitMQ), database design and management.",
-                                        "Maintaining, designing and developing new features for websites with a focus on Search Engine Optimization",
+                                        "Developing an internal tool for simplifying the visualization of site metrics and Search Engine Optimization (SEO) health and recommending websites from which purchased links would improve the site's overall rank metrics. This involved the use of third party APIs, React libraries, messaging queues (RabbitMQ), database design and management.",
+                                        "Maintaining, designing and developing new features for loan affilaition websites with a focus on SEO",
                                         "Overseeing team performance and coordinating tasks (both in-house and with freelancers)",
-                                        "Managing the acquisition of links for each site",
+                                        "Managing the acquisition of affiliation links for each site",
                                         "Maintaining the overall SEO health of the sites by abiding to the guidelines set by Google",
                                         "Working with third parties to optimize products and sales",
                                         "Minor server side jobs such as creating CRON jobs and service files ",
                                         "Winner of the Ownership and Teamwork Raketech Awards",
-                                        "Winner of the Innovation Day Award"
+                                        "Winner of the Hackathon Award"
                                     ]}
                                 />
                                 <CvSection
@@ -107,10 +107,7 @@ class Cv extends React.Component {
                                         "ExpressJS", 
                                         "REST",
                                         "MongoDB", 
-                                        "Database Associations",
-                                        "Authentication",
                                         "PassportJS", 
-                                        "Authorization"
                                     ]}
                                     twoColumns={true}
                                 />
@@ -129,7 +126,7 @@ class Cv extends React.Component {
                                     company="University of Malta"
                                     title="BSC ICT (Artificial Intelligence - Honours) EQF level 6"
                                     list={[
-                                        "Programming in Java, C, C++, HTML, CSS, SQL, PROLOG, MATLAB",
+                                        "Programming in Java, C, C++, HTML + CSS, Javascript, PHP, SQL, PROLOG, MATLAB",
                                         "Web Development", 
                                         "Signal Processing",
                                         "Data Structures and Algorithms",
@@ -153,7 +150,7 @@ class Cv extends React.Component {
                                     title="CS50 - Computer Science Introduction Course"
                                     list={[
                                         "C programming",
-                                        "Web Development - HTML, CSS , PHP, JS", 
+                                        "Web Development - HTML, CSS, PHP, Javascript", 
                                     ]}
                                 />
                                 <CvSection
@@ -209,7 +206,7 @@ class Cv extends React.Component {
                                 <CvSection
                                     time="Other"
                                     company=""
-                                    title="Reading, Gardening, Tennis, Gaming, Art"
+                                    title="Reading, Gardening, Basketball, Baking, Gaming, Art"
                                     list={[]}
                                 />
                             </Collapsible>

@@ -22,7 +22,7 @@ class About extends React.Component {
                                 I have also tried my hand at voluntary work which was incredibly rewarding.
                                 It was through this type of work that I learned proper time management and
                                 coping with new challenges.</p>
-                            <p>In my free time I enjoy fencing and taking part in theatrical performances,
+                            <p>In my free time I enjoy fencing, basketball, taking part in theatrical performances,
                                 as well as, reading and gardening.</p>
                             <p>I believe that teamwork, organization, having a willingness to learn and good
                                 time management are the keys to success!</p>

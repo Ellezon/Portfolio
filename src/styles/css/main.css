@@ -6,12 +6,14 @@ h5,
 h6 {
     font-family: 'Advent Pro', sans-serif;
     color: #622f8a;
-    font-weight: bold;
+    font-weight: bold; 
+    width: 100%;
 }
-h1.section-title
-{
+
+h1.section-title {
     text-shadow: 4px -1px 8px #01071469;
 }
+
 body {
     font-family: "Segoe UI", "Roboto";
     cursor: url('../../img/cursor.png'), auto;
@@ -21,9 +23,10 @@ body {
     padding: 0
 }
 
-.container{
+.container {
     margin-top: 15px;
 }
+
 .blue-section {
     background: #010714;
     box-shadow: 0px 1px 8px 0px #1e1e1e;
@@ -54,7 +57,14 @@ body {
     box-shadow: none;
 }
 
-
+.play-icon {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 20px solid #fff;
+    margin: 7px;
+}
 
 /* Navbar styling */
 .navbar {
@@ -79,11 +89,10 @@ body {
 
 /* Intro styling */
 #hero {
-    background-image: url('../../img/img.png');
+    background-image: url('../../img/CV.png');
     height: 200px;
     background-size: cover;
     display: flex;
-    background-size: initial;
     background-repeat-x: no-repeat;
     justify-content: center;
     align-items: center;
@@ -184,16 +193,20 @@ body {
 /* End Highlights styling */
 
 /* CV styling */
-#cv-wrapper{
+#cv-wrapper {
     padding: 15px 0px;
-    background: url('../../img/img.png');
+    background: url('../../img/CV.png');
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
-#cv h1{
+
+#cv h1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
+
 #cv i {
     border: solid #fff;
     border-width: 0 3px 3px 0;
@@ -235,10 +248,10 @@ body {
     margin-bottom: 0px;
 }
 
-#cv .Collapsible 
-{
+#cv .Collapsible {
     margin-bottom: 15px;
 }
+
 #cv .flex-row {
     margin: 15px 0px;
     width: 100%
@@ -274,13 +287,16 @@ body {
     margin-left: -1em;
     font-size: 22px;
 }
+
 #cv .Collapsible__contentOuter {
     background: #ffffffbf;
 }
-#cv .is-open .Collapsible__contentOuter{
+
+#cv .is-open .Collapsible__contentOuter {
     border: 2px solid #010714;
     border-top: 0
 }
+
 /* End CV styling */
 
 /* Contact styling */
@@ -296,3 +312,39 @@ body {
 }
 
 /* End Contact styling */
+/* Portfolio styling */
+.btn-wrapper
+{
+    position: absolute;
+}
+.btn-wrapper .btn
+{
+    margin: 5px auto;
+}
+.game-loader{
+    position: absolute;
+}
+.game-img
+{
+    margin: 15px auto;
+}
+/* End Portfolio styling */
+
+/* Scollbar styling */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #472264;
+}
+
+/* End Scollbar styling */

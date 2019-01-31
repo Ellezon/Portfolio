@@ -35,13 +35,13 @@ class Menu extends React.Component {
                             {window.location.pathname === "/" && 
                                 <AnchorLink className="nav-link" href="#about">About</AnchorLink>}
                             {window.location.pathname === "/portfolio" && 
-                                <a className="nav-link" href="/#about">About</a>}
+                                <a className="nav-link" href="/">About</a>}
                         </li>
                         <li className="nav-item">
                             {window.location.pathname === "/" && 
                                 <AnchorLink className="nav-link" href="#cv">CV</AnchorLink>}
                             {window.location.pathname === "/portfolio" && 
-                                <a className="nav-link" href="#cv">CV</a>}
+                                <a className="nav-link" href="/#cv">CV</a>}
                         </li>
                         <li className="nav-item">
                             {window.location.pathname === "/portfolio" && 
@@ -51,10 +51,7 @@ class Menu extends React.Component {
                                 <a className="nav-link" href="/portfolio">Portfolio</a>}
                         </li>
                         <li className="nav-item">
-                            {window.location.pathname === "/" &&
-                                <AnchorLink className="nav-link" href="#contact">Contact</AnchorLink>}
-                            {window.location.pathname === "/portfolio" && 
-                                <a className="nav-link" href="#contact">Contact</a>}
+                            <AnchorLink className="nav-link" href="#contact">Contact</AnchorLink>
                         </li>
                     </ul>
                 </div>
