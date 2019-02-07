@@ -1,0 +1,374 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Advent Pro', sans-serif;
+    color: #622f8a;
+    font-weight: bold;
+    width: 100%;
+}
+
+
+body {
+    font-family: "Segoe UI", "Roboto";
+    cursor: url('../../img/cursor.png'), auto;
+}
+
+.container-fluid {
+    padding: 0
+}
+
+.container {
+    margin-top: 15px;
+}
+
+.blue-section {
+    background: #010714;
+    box-shadow: 0px 1px 8px 0px #1e1e1e;
+}
+
+@media (min-width: 1050px) {
+    .container {
+        max-width: 1024px;
+    }
+}
+
+@media (max-width: 991px) {
+    .container {
+        max-width: 700px;
+    }
+}
+
+.btn-primary:not(:disabled):not(.disabled) {
+    background-color: #622f8a;
+    border: none;
+    transition: all 0.5s ease;
+}
+
+.btn-primary:not(:disabled):not(.disabled):hover,
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled):focus,
+.btn-primary:not(:disabled):not(.disabled):focus:active {
+    background-color: #28113a;
+    box-shadow: none;
+}
+
+.play-icon {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 20px solid #fff;
+    margin: 7px;
+}
+
+/* Navbar styling */
+.navbar {
+    justify-content: center
+}
+
+.nav-item {
+    font-family: 'Advent Pro', sans-serif;
+}
+
+.collapse.navbar-collapse {
+    flex-grow: 0;
+}
+
+@media(max-width: 576px) {
+    .navbar {
+        justify-content: space-between;
+    }
+}
+
+/* End Navbar styling */
+
+/* Intro styling */
+#hero {
+    background-image: url('../../img/header-light.png');
+    height: 200px;
+    display: flex;
+    text-align: center;
+    background-repeat-x: no-repeat;
+    background-attachment: fixed;
+}
+
+#hero h1 {
+    color: #010714;
+    font-size: 7em;
+    text-shadow: 2px 2px 4px #aab3b2;
+    font-family: 'Bree Serif', serif;
+    font-weight: bold;
+}
+
+#hero .slogan {
+    font-size: 20px;
+    float: right;
+    font-family: 'Advent Pro';
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #aab3b2;
+}
+
+@media(max-width: 576px) {
+    #hero {
+        height: auto;
+        background-size: cover;
+        display: block;
+    }
+}
+
+/* End Intro styling */
+
+/* About styling */
+#about {
+    text-align: justify;
+}
+
+#about .img-wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#about img {
+    max-width: 100%;
+    border-radius: 150px;
+    border: 4px solid #622f8a;
+    box-shadow: 0px 1px 8px 0px #1e1e1e;
+}
+
+@media(max-width: 768px) {
+    #about img {
+        max-width: 200px;
+    }
+}
+
+/* End About styling */
+
+
+/* Highlights styling */
+#highlights {
+    padding: 30px 0;
+    text-align: center;
+    justify-content: center;
+    margin: 15px auto 0px auto;
+}
+
+#highlights img {
+    width: 60px;
+}
+
+#highlights .carousel {
+    width: 100%;
+}
+
+#highlights .carousel-caption {
+    position: relative;
+    right: 0%;
+    left: 0%;
+}
+
+#highlights .carousel-indicators {
+    bottom: -20px;
+}
+
+#highlights .award-caption {
+    color: #fff;
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 20px;
+    line-height: 1;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+@media(max-width: 576px) {
+    #highlights .award-caption {
+        margin-right: auto;
+        margin-left: auto;
+        width: 70%;
+    }
+}
+
+/* End Highlights styling */
+
+/* CV styling */
+#cv-wrapper {
+    padding: 15px 0px;
+    background-image: url('../../img/design.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#cv h1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#cv i {
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+#cv .up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+#cv .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+#cv .Collapsible__trigger {
+    font-family: 'Advent Pro', sans-serif;
+    color: #622f8a;
+    font-weight: bold;
+    font-size: 24px
+}
+
+#cv .Collapsible__trigger:hover {
+    cursor: pointer;
+}
+
+#cv h4 {
+    background: #010714;
+    color: #fff;
+    padding: 10px 15px;
+    box-shadow: -1px 2px 8px 0px #72717152;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    margin-bottom: 0px;
+}
+
+#cv .Collapsible {
+    margin-bottom: 15px;
+}
+
+#cv .flex-row {
+    margin: 15px 0px;
+    width: 100%
+}
+
+#cv h5 {
+    margin-top: 8px
+}
+
+@media(min-width: 767px) {
+    #cv span {
+        display: block;
+    }
+}
+
+@media(max-width: 767px) {
+    #cv h5 span {
+        float: right
+    }
+}
+
+#cv ul {
+    list-style: none;
+    padding-left: 20px
+}
+
+#cv ul li::before {
+    content: "\2022";
+    color: #622f8a;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    font-size: 22px;
+}
+
+#cv .Collapsible__contentOuter {
+    background: #ffffffbf;
+}
+
+#cv .is-open .Collapsible__contentOuter {
+    border: 2px solid #010714;
+    border-top: 0
+}
+
+/* End CV styling */
+
+/* Contact styling */
+#contact {
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+#contact img {
+    margin: 10px;
+    opacity: 0.5;
+    transition: all 0.5s ease;
+}
+
+#contact img:hover {
+    opacity: 1;
+}
+
+/* End Contact styling */
+/* Portfolio styling */
+#portfolio-wrapper {
+    background-image: url('../../img/design.png');
+    background-position-y: bottom;
+    background-size: cover;
+    background-repeat-x: no-repeat;
+    padding: 15px 0px;
+}
+
+#portfolio-wrapper .container {
+    background: #ffffffbf;
+    border-radius: 5px;
+    padding-top: 10px
+}
+
+.btn-wrapper {
+    position: absolute;
+}
+
+.btn-wrapper .btn {
+    margin: 5px auto;
+}
+
+.game-loader {
+    position: absolute;
+}
+
+.game-img {
+    margin: 15px auto;
+}
+
+/* End Portfolio styling */
+
+/* Scollbar styling */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #472264;
+}
+
+/* End Scollbar styling */
