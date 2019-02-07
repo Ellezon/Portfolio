@@ -224,12 +224,6 @@ class Cv extends React.Component {
                                     time="07/2013 – 11/2013"
                                     company="MSSP Oratory"
                                     title="Child-care worker"
-                                    list={[]}
-                                />
-                                <CvSection
-                                    time="Other"
-                                    company=""
-                                    title="Reading, Gardening, Tennis, Gaming, Art"
                                     list={[
                                         "Taking the young children during the homily and teaching them about the readings in a simple manner as well as planning games for them"
                                     ]}

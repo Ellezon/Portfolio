@@ -14,9 +14,8 @@ class Contact extends React.Component {
             <a target="__blank" href="mailto:michelle_falzon@hotmail.com"> 
                 <img alt="email" src="/img/email.png"/>
             </a>
-           
           </div>
-       
+        
       </React.Fragment>
     )
   }

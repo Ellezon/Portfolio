@@ -31,7 +31,10 @@ class unityGame extends React.Component {
                     </div>
                     <a target="_blank" rel="noopener noreferrer" href={"/games/"+this.props.name.replace(' ','')} onClick={() =>this.setState({isLoading: false, play: false})} className="btn btn-primary">Play in New Tab</a>    
                     {this.props.hasAPK === true &&
-                      <a className="btn btn-primary" href={"/games/"+this.props.name.replace(' ','')+"/pacman.apk"} onClick={() =>this.setState({isLoading: false, play: false})}>Download APK </a>    
+                      <a className="btn btn-primary" href={"/games/"+this.props.name.replace(' ','')+"/"+this.props.name.replace(' ','')+".apk"} onClick={() =>this.setState({isLoading: false, play: false})}>Download APK </a>    
+                    }
+                    {this.props.hasEXE === true &&
+                      <a className="btn btn-primary" href={"/games/"+this.props.name.replace(' ','')+"/"+this.props.name.replace(' ','')+".exe"} onClick={() =>this.setState({isLoading: false, play: false})}>Download Executable </a>    
                     }
                 </div>
                 <img src={"/img/"+this.props.imgUrl} className="game-img" alt={this.props.name +" Screenshot"}/>

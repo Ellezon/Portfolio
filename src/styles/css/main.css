@@ -6,13 +6,10 @@ h5,
 h6 {
     font-family: 'Advent Pro', sans-serif;
     color: #622f8a;
-    font-weight: bold; 
+    font-weight: bold;
     width: 100%;
 }
 
-h1.section-title {
-    text-shadow: 4px -1px 8px #01071469;
-}
 
 body {
     font-family: "Segoe UI", "Roboto";
@@ -44,16 +41,17 @@ body {
     }
 }
 
-.btn-primary {
+.btn-primary:not(:disabled):not(.disabled) {
     background-color: #622f8a;
-    border: none
+    border: none;
+    transition: all 0.5s ease;
 }
 
-.btn-primary:hover,
-.btn-primary:active,
-.btn-primary:focus,
-.btn-primary:focus:active {
-    background: #472264;
+.btn-primary:not(:disabled):not(.disabled):hover,
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled):focus,
+.btn-primary:not(:disabled):not(.disabled):focus:active {
+    background-color: #28113a;
     box-shadow: none;
 }
 
@@ -89,24 +87,28 @@ body {
 
 /* Intro styling */
 #hero {
-    background-image: url('../../img/CV.png');
+    background-image: url('../../img/header-light.png');
     height: 200px;
-    background-size: cover;
     display: flex;
+    text-align: center;
     background-repeat-x: no-repeat;
-    justify-content: center;
-    align-items: center;
     background-attachment: fixed;
 }
 
 #hero h1 {
-    font-size: 85px;
-    text-shadow: 4px -1px 8px #01071469;
+    color: #010714;
+    font-size: 7em;
+    text-shadow: 2px 2px 4px #aab3b2;
+    font-family: 'Bree Serif', serif;
+    font-weight: bold;
 }
 
 #hero .slogan {
-    align-self: flex-end;
     font-size: 20px;
+    float: right;
+    font-family: 'Advent Pro';
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #aab3b2;
 }
 
 @media(max-width: 576px) {
@@ -195,7 +197,7 @@ body {
 /* CV styling */
 #cv-wrapper {
     padding: 15px 0px;
-    background: url('../../img/CV.png');
+    background-image: url('../../img/design.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -309,30 +311,51 @@ body {
 #contact img {
     margin: 10px;
     opacity: 0.5;
+    transition: all 0.5s ease;
+}
+
+#contact img:hover {
+    opacity: 1;
 }
 
 /* End Contact styling */
 /* Portfolio styling */
-.btn-wrapper
-{
+#portfolio-wrapper {
+    background-image: url('../../img/design.png');
+    background-position-y: bottom;
+    background-size: cover;
+    background-repeat-x: no-repeat;
+    padding: 15px 0px;
+}
+
+#portfolio-wrapper .container {
+    background: #ffffffbf;
+    border-radius: 5px;
+    padding-top: 10px
+}
+
+.btn-wrapper {
     position: absolute;
 }
-.btn-wrapper .btn
-{
+
+.btn-wrapper .btn {
     margin: 5px auto;
 }
-.game-loader{
+
+.game-loader {
     position: absolute;
 }
-.game-img
-{
+
+.game-img {
     margin: 15px auto;
 }
+
 /* End Portfolio styling */
 
 /* Scollbar styling */
 ::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     background-color: #F5F5F5;
 }
@@ -344,6 +367,7 @@ body {
 
 ::-webkit-scrollbar-thumb {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     background-color: #472264;
 }
 
