@@ -5,12 +5,14 @@ class Intro extends React.Component {
     return (
       <React.Fragment>
           <div id="hero">
-            <div class="container">
+            <div className="container">
             <h1 className="section-title">Michelle Falzon</h1>
-            <span className="slogan">
-              Hard work is the bridge between goals and accomplishment          
-            </span>
-          </div>
+            </div>
+            <div className="slogan">
+              <div className="container">
+                Hard work is the bridge between goals and accomplishment          
+              </div>
+            </div>
         </div>
       </React.Fragment>
     )

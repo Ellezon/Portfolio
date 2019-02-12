@@ -69,12 +69,14 @@ class Portfolio extends React.Component {
                   content = {this.pacmanContent}
                   imgUrl = 'pacmanSS.png'
                   hasAPK = {true}
+                  link = "pacman"
                 /> 
                 <UnityGame 
                   name = "Driver's Dilemma"
                   about = "A web-based game developed as a platform for obtaining data by simulating the Trolley Dilemma. The aim was to determine whether the trolley dilemma would be successful in Autonomous cars based on the participants choices in various scenarios."
                   content = {this.driversDilemmaContent}
-                  imgUrl = 'DriversSS.png'
+                  imgUrl = 'driversSS.png'
+                  link = "drivers-dilemma"
                 />
                 <UnityGame 
                   name = "FurBall"
@@ -82,6 +84,7 @@ class Portfolio extends React.Component {
                   content = {this.furballContent}
                   imgUrl = 'furballSS.png'
                   hasEXE = {true}
+                  link = "furball"
                 />
               </div>
             </div>

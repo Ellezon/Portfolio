@@ -71,6 +71,20 @@ body {
 
 .nav-item {
     font-family: 'Advent Pro', sans-serif;
+    font-size: 18px
+}
+
+.navbar-nav .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.nav-item .nav-link.current {
+    color: #fff;
+    font-size: 20px;
+    padding: 6px;
+    padding-right: 1rem;
+    padding-left: 1rem;
 }
 
 .collapse.navbar-collapse {
@@ -88,8 +102,8 @@ body {
 /* Intro styling */
 #hero {
     background-image: url('../../img/header-light.png');
-    height: 200px;
     display: flex;
+    flex-direction: column;
     text-align: center;
     background-repeat-x: no-repeat;
     background-attachment: fixed;
@@ -98,26 +112,29 @@ body {
 #hero h1 {
     color: #010714;
     font-size: 7em;
-    text-shadow: 2px 2px 4px #aab3b2;
     font-family: 'Bree Serif', serif;
     font-weight: bold;
 }
 
 #hero .slogan {
-    font-size: 20px;
-    float: right;
-    font-family: 'Advent Pro';
-    font-weight: bold;
-    text-shadow: 1px 1px 2px #aab3b2;
+    font-size: 19px;
+    font-weight: normal;
+    text-align: right;
+    background: #ffffff66;
+    font-family: "Bree Serif",serif;
 }
 
-@media(max-width: 576px) {
-    #hero {
-        height: auto;
-        background-size: cover;
-        display: block;
+#hero .slogan .container{
+    margin-top:0
+}
+
+@media(max-width: 991px) {
+    #hero h1 {
+        font-size: 5em;
     }
 }
+
+
 
 /* End Intro styling */
 
@@ -207,6 +224,11 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background: #ffffffbf;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding-bottom: 8px;
+    margin-bottom: 0;
 }
 
 #cv i {
@@ -230,11 +252,12 @@ body {
     font-family: 'Advent Pro', sans-serif;
     color: #622f8a;
     font-weight: bold;
-    font-size: 24px
+    font-size: 24px;
+    cursor: pointer;
 }
 
-#cv .Collapsible__trigger:hover {
-    cursor: pointer;
+#cv .Collapsible__trigger:hover h4 {
+    background: #28063a;
 }
 
 #cv h4 {
@@ -248,6 +271,7 @@ body {
     justify-content: space-between;
     border-radius: 5px;
     margin-bottom: 0px;
+    transition: all .25s ease;
 }
 
 #cv .Collapsible {
@@ -348,6 +372,7 @@ body {
 
 .game-img {
     margin: 15px auto;
+    max-width: 100%;
 }
 
 /* End Portfolio styling */

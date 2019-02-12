@@ -2,7 +2,7 @@
   "name": "ellezon",
   "version": "1.0.0",
   "description": "Portfolio",
-  "main": "app.js",
+  "main": "src/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Ellezon/portfolio.git"
@@ -12,9 +12,12 @@
   "bugs": {
     "url": "https://github.com/Ellezon/portfolio/issues"
   },
-  "homepage": "https://github.com/Ellezon/portfolio#readme",
+  "homepage": "https://www.ellezon.com",
   "private": true,
   "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
     "mdbreact": "^4.8.6",
     "node-sass": "^4.11.0",
     "react": "^16.7.0",
