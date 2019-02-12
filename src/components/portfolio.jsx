@@ -56,7 +56,7 @@ class Portfolio extends React.Component {
                 on simpler and smaller data sets.
               </p> 
               <p>
-                <a className="btn btn-primary" target="_blank" rel="noopener noreferrer" href="https://www.um.edu.mt/library/oar/handle/123456789/29525">Link to Thesis Paper</a>
+                <a className="btn btn-primary" target="_blank" rel="noopener noreferrer" href="https://www.um.edu.mt/library/oar/handle/123456789/29525">Thesis Paper</a>
               </p>
               <h2>Games</h2>
               <p>
