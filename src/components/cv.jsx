@@ -18,14 +18,14 @@ class Cv extends React.Component {
                                     list={[
                                         "Languages used: React, Vanilla Javascript with jQuery, SQL, PHP, HTML and CSS",
                                         "Developing an internal tool for simplifying the visualization of site metrics and Search Engine Optimization (SEO) health and recommending websites from which purchased links would improve the site's overall rank metrics. This involved the use of third party APIs, React libraries, messaging queues (RabbitMQ), database design and management.",
-                                        "Maintaining, designing and developing new features for loan affilaition websites with a focus on SEO",
+                                        "Maintaining, designing and developing new features for loan affiliation websites with a focus on SEO",
                                         "Overseeing team performance and coordinating tasks (both in-house and with freelancers)",
                                         "Managing the acquisition of affiliation links for each site",
                                         "Maintaining the overall SEO health of the sites by abiding to the guidelines set by Google",
                                         "Working with third parties to optimize products and sales",
                                         "Minor server side jobs such as creating CRON jobs and service files ",
                                         "Winner of the Ownership and Teamwork Raketech Awards",
-                                        "Winner of the Hackathon Award"
+                                        "Winner of the Innovation Day Award"
                                     ]}
                                 />
                                 <CvSection
@@ -86,13 +86,13 @@ class Cv extends React.Component {
                             </Collapsible>
                             <Collapsible triggerWhenOpen={<h4>Education and Training<i className="arrow up"></i></h4>} trigger={<h4>Education and Training<i className="arrow down"></i></h4>}>
                                 <CvSection
-                                    time="2018"
-                                    company="StreetHR (Malta)"
-                                    title="Informal Leadership Training"
-                                    list={[]}
+                                        time="2019"
+                                        company="Arun Nagarathana (Udemy)"
+                                        title="SEO 2019: Complete SEO Training"
+                                        list={[]}
                                 />
                                 <CvSection
-                                    time="2018"
+                                    time="2019"
                                     company="Colt Steele (Udemy)"
                                     title="The Web Developer Bootcamp"
                                     list={[
@@ -113,13 +113,9 @@ class Cv extends React.Component {
                                 />
                                  <CvSection
                                     time="2018"
-                                    company="Maximilian Schwarzmüller (Udemy)"
-                                    title="Vue JS 2 - The Complete Guide"
-                                    list={[
-                                        "Vue JS 2",
-                                        "Vue Router", 
-                                        "Vuex"
-                                    ]}
+                                    company="StreetHR (Malta)"
+                                    title="Informal Leadership Training"
+                                    list={[]}
                                 />
                                 <CvSection
                                     time="2014 - 2017"
