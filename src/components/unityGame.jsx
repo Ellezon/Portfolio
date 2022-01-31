@@ -1,7 +1,6 @@
 import React from 'react';
 import Unity from "react-unity-webgl";
 
-
 class unityGame extends React.Component {
   constructor(props) {
     super(props);
@@ -21,14 +20,14 @@ class unityGame extends React.Component {
     return (
           <div>
             <h3>{this.props.name} </h3>
-            <p> {this.props.about} </p>
+            <div dangerouslySetInnerHTML={{ __html: this.props.about}}/>
             <div className="d-flex flex-column justify-content-center align-items-center">
             {this.state.play === false &&
                 <React.Fragment>
                   <div className="btn-wrapper d-flex flex-column justify-content-center align-items-center">
-                    <div className="btn btn-primary" onClick={() => this.setState({play: true})}>
+                    {this.props.showPlayButton && <div className="btn btn-primary" onClick={() => this.setState({play: true})}>
                         <div className="play-icon"></div>
-                    </div>
+                    </div>}
                     <a target="_blank" rel="noopener noreferrer" href={"/games/"+this.props.link} onClick={() =>this.setState({isLoading: false, play: false})} className="btn btn-primary">Play in New Tab</a>    
                     {this.props.hasAPK === true &&
                       <a className="btn btn-primary" href={"/games/"+this.props.link+"/"+this.props.link+".apk"} onClick={() =>this.setState({isLoading: false, play: false})}>Download APK </a>    
@@ -52,7 +51,6 @@ class unityGame extends React.Component {
               <Unity className={this.state.isLoading === false?"":"d-none"} height="100%" width="1024px" unityContent={this.props.content}/>
             }
             </div>
-
           </div>
         );
       }

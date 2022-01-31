@@ -24,7 +24,17 @@ class Portfolio extends React.Component {
     this.pacmanContent = new UnityContent(
       "/games/Pacman/Build/Pacman.json",
       "/games/Pacman/Build/UnityLoader.js"
-    );;
+    );
+
+    this.flowContent = new UnityContent(
+      'games/flow/Build/Flow.wasm',
+      'games/flow/Build/Flow.loader.js',
+
+      // loaderUrl: "games/flow/Build/Flow.loader.js",
+      // dataUrl: "games/flow/Build/Flow.data",
+      // frameworkUrl: "games/flow/Build/Flow.framework.js",
+      // codeUrl: "games/flow/Build/Flow.wasm",
+    );
   }
   render() {
     return (
@@ -63,12 +73,22 @@ class Portfolio extends React.Component {
                 Feel free to browse some of the projects I've worked on! <br/>
                 <b> Please note: These games were not optimised for web and thus might take a while to load! For best results open in a new tab.</b>
               </p>
+              <UnityGame 
+                  name = "Flow (Global Game Jam, 2022)"
+                  about = "<p> Join Sir Toebeans in his medieval mayhem adventure! </p> The game is inspired by real longsword fencing techniques, where the aim of the game is to attack and defend at the same time! Use action cards to attack crow bandits whilst defending yourself in order to diminish their health and drive them away. Each card swings your sword in a different direction, attacking one square and defending another. Every attack card lets you swing your sword in a different direction. However, you must pick your attacks carefully! <p>In fencing, flow is the idea that the fastest attack is one starting from the final position of the previous attack. Thus, if you plan which card to play correctly, you will activate ‘flow’ (fast attack) and are guaranteed to hit the enemy! In addition, you are also to defend more areas. </p> Please use 16:9 aspect ratio for the best experience. <a href='https://globalgamejam.org/2022/games/flow-6'>Link to Game Jam Game Page</a> <p> Team Members: Daniel Mercieca, Audrienne Degiorgio and Daniela Attard"
+                  content = {this.flowContent}
+                  imgUrl = 'flowSS.png'
+                  hasEXE = {true}
+                  showPlayButton={false}
+                  link = "flow"
+                />
                 <UnityGame 
                   name = "Pacman"
-                  about = "PC Version of Pacman 3D. Made using Unity game engine. Download executable folder to run on PC or APK file to run on Android. Mobile version requires google cardboard."
+                  about = "First game every made using unity! PC Version of Pacman 3D. Made using Unity game engine. Download executable folder to run on PC or APK file to run on Android. Mobile version requires google cardboard."
                   content = {this.pacmanContent}
                   imgUrl = 'pacmanSS.png'
                   hasAPK = {true}
+                  showPlayButton={true}
                   link = "pacman"
                 /> 
                 <UnityGame 
@@ -76,6 +96,7 @@ class Portfolio extends React.Component {
                   about = "A web-based game developed as a platform for obtaining data by simulating the Trolley Dilemma. The aim was to determine whether the trolley dilemma would be successful in Autonomous cars based on the participants choices in various scenarios."
                   content = {this.driversDilemmaContent}
                   imgUrl = 'driversSS.png'
+                  showPlayButton={true}
                   link = "drivers-dilemma"
                 />
                 <UnityGame 
@@ -84,6 +105,7 @@ class Portfolio extends React.Component {
                   content = {this.furballContent}
                   imgUrl = 'furballSS.png'
                   hasEXE = {true}
+                  showPlayButton={true}
                   link = "furball"
                 />
               </div>

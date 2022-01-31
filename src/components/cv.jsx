@@ -9,7 +9,7 @@ class Cv extends React.Component {
                 <div className="container" id="cv">
                     <div className="row">
                         <div className="d-flex flex-column col-12">
-                            <h1 className="section-title">Curriculum Vitae<a target="_blank" className="float-right btn btn-primary align-self-center" href="/docs/CV_2019.pdf">Download CV</a></h1>
+                            <h1 className="section-title">Curriculum Vitae<a target="_blank" className="float-right btn btn-primary align-self-center" href="/docs/CV_2021.pdf">Download CV</a></h1>
                             <Collapsible triggerWhenOpen={<h4>Work Experience<i className="arrow up"></i></h4>} open trigger={<h4>Work Experience<i className="arrow down"></i></h4>}>
                                 <CvSection
                                     time="09/2017 - Present"
