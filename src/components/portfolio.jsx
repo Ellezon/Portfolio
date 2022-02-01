@@ -77,7 +77,7 @@ class Portfolio extends React.Component {
                   name = "Flow (Global Game Jam, 2022)"
                   about = "<p> Join Sir Toebeans in his medieval mayhem adventure! </p> The game is inspired by real longsword fencing techniques, where the aim of the game is to attack and defend at the same time! Use action cards to attack crow bandits whilst defending yourself in order to diminish their health and drive them away. Each card swings your sword in a different direction, attacking one square and defending another. Every attack card lets you swing your sword in a different direction. However, you must pick your attacks carefully! <p>In fencing, flow is the idea that the fastest attack is one starting from the final position of the previous attack. Thus, if you plan which card to play correctly, you will activate ‘flow’ (fast attack) and are guaranteed to hit the enemy! In addition, you are also to defend more areas. </p> Please use 16:9 aspect ratio for the best experience. <a href='https://globalgamejam.org/2022/games/flow-6'>Link to Game Jam Game Page</a> <p> Team Members: Daniel Mercieca, Audrienne Degiorgio and Daniela Attard"
                   content = {this.flowContent}
-                  imgUrl = 'flowSS.png'
+                  imgUrl = 'flowSS.jpg'
                   hasEXE = {true}
                   showPlayButton={false}
                   link = "flow"
