@@ -12,7 +12,39 @@ class Cv extends React.Component {
                             <h1 className="section-title">Curriculum Vitae<a target="_blank" className="float-right btn btn-primary align-self-center" href="/docs/CV_2021.pdf">Download CV</a></h1>
                             <Collapsible triggerWhenOpen={<h4>Work Experience<i className="arrow up"></i></h4>} open trigger={<h4>Work Experience<i className="arrow down"></i></h4>}>
                                 <CvSection
-                                    time="09/2017 - Present"
+                                    time="03/2020 - Present"
+                                    company="Dorado Games"
+                                    title="Tech Team Lead"
+                                    list={[
+                                       "Working as a fullstack developer on the development of games to bug fix and implement new features.",
+                                        "Managing and training a team",
+                                        "Writing, enhancing and maintaining fast code, adhering to international standards",
+                                        "Writing and maintaining detailed technical design and software documentation",
+                                        "Collaborating closely with all departments and key members to create and deliver an exceptional and involving online gameplay experience",
+                                        "Working on the technical aspect of project planning alongside producers",
+                                        "Representing and promoting the company/game at multi-international conferences",
+                                        "Tech: Java, Typescript, PHP, SCSS, VueJS, SQL, Jenkins, Github Actions, Jira"
+                                    ]}
+                                />
+                                <CvSection
+                                    time="05/2020 - Present"
+                                    company="Freelancing (self-employed)"
+                                    title="Web Developer"
+                                    list={[
+                                        "Freelancing Web Developer with Raketech as well as projects with other individuals/companies.",
+                                    ]}
+                                />
+                                <CvSection
+                                    time="11/2019 - 03/2020"
+                                    company="Authentic Gaming"
+                                    title="React Front End Developer"
+                                    list={[
+                                        "Languages used: React JS, Redux, Jest, Enzyme, Webpack, Web Sockets and Typescript",
+                                        "Developing the UI for live casino games",
+                                    ]}
+                                />
+                                <CvSection
+                                time="09/2017 - 10/2019"
                                     company="Raketech"
                                     title="Web Developer and Team Performance Coordinator"
                                     list={[
@@ -28,61 +60,6 @@ class Cv extends React.Component {
                                         "Winner of the Innovation Day Award"
                                     ]}
                                 />
-                                <CvSection
-                                    time="07/2016 - 09/2016"
-                                    company="Betsson Group"
-                                    title="Intern Front End Developer"
-                                    list={[
-                                        "Bug fixing",
-                                        "Minor testing",
-                                        "Styling of new features"
-                                    ]}
-                                />
-                                <CvSection
-                                    time="10/2015 - 12/2017"
-                                    company="University of Malta"
-                                    title="Attendant I.T. Services"
-                                    list={[
-                                        "Supervising computer labs",
-                                        "Troubleshooting",
-                                    ]}
-                                />
-                                <CvSection
-                                    time="09/2015 - 03/2016"
-                                    company="HLB Falzon & Falzon <br/> (Family Business)"
-                                    title="Junior Clerk"
-                                    list={[]}
-                                />
-                                <CvSection
-                                    time="06/2015 - 08/2015"
-                                    company="BELS"
-                                    title="Teen Group Leader"
-                                    list={[
-                                        "Supervising foreign students ages 12 to 17 on activities"
-                                    ]}
-                                />
-                                <CvSection
-                                    time="03/2015 - 06/2015"
-                                    company="After Glow Events"
-                                    title="Childrens’ Animator"
-                                    list={[
-                                        "Taking care of children between the ages of 3 and 10 years old"
-                                    ]}
-                                />
-                                <CvSection
-                                    time="04/2014 - 03/2015"
-                                    company="PartyTrap"
-                                    title="Childrens’ Animator"
-                                    list={[]}
-                                />
-                                <CvSection
-                                    time="07/2013 - 09/2013"
-                                    company="HLB Falzon & Falzon <br/> (Family Business)"
-                                    title="Assistant"
-                                    list={[
-                                        "Filing and updating archives"
-                                    ]}
-                                />
                             </Collapsible>
                             <Collapsible triggerWhenOpen={<h4>Education and Training<i className="arrow up"></i></h4>} trigger={<h4>Education and Training<i className="arrow down"></i></h4>}>
                                 <CvSection
@@ -95,20 +72,7 @@ class Cv extends React.Component {
                                     time="2019"
                                     company="Colt Steele (Udemy)"
                                     title="The Web Developer Bootcamp"
-                                    list={[
-                                        "HTML5",
-                                        "CSS3", 
-                                        "JavaScript",
-                                        "Bootstrap", 
-                                        "SemanticUI", 
-                                        "jQuery", 
-                                        "NodeJS",
-                                        "NPM",
-                                        "ExpressJS", 
-                                        "REST",
-                                        "MongoDB", 
-                                        "PassportJS", 
-                                    ]}
+                                    list={[]}
                                     twoColumns={true}
                                 />
                                  <CvSection
@@ -140,100 +104,24 @@ class Cv extends React.Component {
                                         "Content Based Image Retrieval and Categorization"
                                     ]}
                                 />
-                                <CvSection
-                                    time="2015"
-                                    company="Harvard University"
-                                    title="CS50 - Computer Science Introduction Course"
-                                    list={[
-                                        "C programming",
-                                        "Web Development - HTML, CSS, PHP, Javascript", 
-                                    ]}
-                                />
-                                <CvSection
-                                    time="2012"
-                                    company="STC"
-                                    title="Web Design Summer Course"
-                                    list={[]}
-                                />
-                                <CvSection
-                                    time="2012 - 2014"
-                                    company="De La Salle College Sixth Form"
-                                    title="EQF level 4"
-                                    list={[
-                                        "Advanced level: Computing and Pure Mathematics",
-                                        "Intermediate level: English, Physics and Systems of Knowledge", 
-                                    ]}
-                                />
-                                <CvSection
-                                    time="2001 - 2012"
-                                    company="St. Joseph School"
-                                    title="School Leaving Certificate Level 3"
-                                    list={[
-                                        "English",
-                                        "Maltese",
-                                        "Maths",
-                                        "Religion",
-                                        "Chemistry",
-                                        "Physics",
-                                        "French",
-                                        "Computer Studies"  
-                                    ]}
-                                />
                             </Collapsible>
                             <Collapsible triggerWhenOpen={<h4>Hobbies<i className="arrow up"></i></h4>}  trigger={<h4>Hobbies<i className="arrow down"></i></h4>}>
                                 <CvSection
-                                        time="2008 - 2017"
-                                        company=""
-                                        title="St. Paul Fencing Club - Olympic Fencing"
-                                        list={[]}
-                                />
-                                <CvSection
-                                    time="2012 - 2018"
+                                    time="2012 - Present"
                                     company=""
-                                    title="DLS Productions/ KSU Students’ Fest - Drama and Theatrical Productions"
+                                    title="Drama and Theatrical Productions"
                                     list={[]}
                                 />
                                 <CvSection
-                                    time="2017 - 2018"
+                                    time="2022 - Present"
                                     company=""
-                                    title="Malta Historical Fencing Association - Historical Fencing"
+                                    title="Pottery and Ceramics"
                                     list={[]}
                                 />
                                 <CvSection
                                     time="Other"
                                     company=""
-                                    title="Reading, Gardening, Basketball, Baking, Gaming, Art"
-                                    list={[]}
-                                />
-                            </Collapsible>
-                            <Collapsible triggerWhenOpen={<h4>Voluntary Work<i className="arrow up"></i></h4>} trigger={<h4>Voluntary Work<i className="arrow down"></i></h4>}>
-                                <CvSection
-                                    time="07/2013 – 09/2013"
-                                    company="Nature Trust Malta (Malta)"
-                                    title="Volunteer"
-                                    list={[
-                                        "Taking care of the injured turtles at Fort Lucjan",
-                                        "Taking care of children and collecting donations during the ‘Kids on the Coast’ events"
-                                    ]}
-                                />
-                                <CvSection
-                                    time="07/2013 – 11/2013"
-                                    company="MSSP Oratory"
-                                    title="Child-care worker"
-                                    list={[
-                                        "Taking the young children during the homily and teaching them about the readings in a simple manner as well as planning games for them"
-                                    ]}
-                                />
-                                <CvSection
-                                    time="01/2014 – 10/2014"
-                                    company=""
-                                    title="Swieqi Youth Local Council - Deputy Mayor"
-                                    list={[]}
-                                />
-                                <CvSection
-                                    time="2015 - 2017"
-                                    company=""
-                                    title="ICTSA (ICT Students' Association) - Subcommittee"
+                                    title="Reading, Gardening, Baking, Gaming, Art, Volunteering"
                                     list={[]}
                                 />
                             </Collapsible>

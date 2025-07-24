@@ -1,59 +1,102 @@
 import React from 'react';
-import Unity from "react-unity-webgl";
+import { Unity } from "react-unity-webgl";
 
-class unityGame extends React.Component {
-  constructor(props) {
-    super(props);
+class UnityGame extends React.Component {
+    constructor(props) {
+        super(props);
 
-    this.state = { 
-      isLoading: true,
-      play: false, 
+        this.state = {
+            isLoading: true,
+            play: false,
+        };
     }
 
-    this.props.content.on("loaded", () => {
-      this.setState({
-        isLoading: false
-      });
-    });  
-  }
-  render() {
-    return (
-          <div>
-            <h3>{this.props.name} </h3>
-            <div dangerouslySetInnerHTML={{ __html: this.props.about}}/>
-            <div className="d-flex flex-column justify-content-center align-items-center">
-            {this.state.play === false &&
-                <React.Fragment>
-                  <div className="btn-wrapper d-flex flex-column justify-content-center align-items-center">
-                    {this.props.showPlayButton && <div className="btn btn-primary" onClick={() => this.setState({play: true})}>
-                        <div className="play-icon"></div>
-                    </div>}
-                    <a target="_blank" rel="noopener noreferrer" href={"/games/"+this.props.link} onClick={() =>this.setState({isLoading: false, play: false})} className="btn btn-primary">Play in New Tab</a>    
-                    {this.props.hasAPK === true &&
-                      <a className="btn btn-primary" href={"/games/"+this.props.link+"/"+this.props.link+".apk"} onClick={() =>this.setState({isLoading: false, play: false})}>Download APK </a>    
+    componentDidMount() {
+        const { addEventListener } = this.props;
+
+        // Use the modern event listener API
+        if (addEventListener) {
+            addEventListener("loaded", () => {
+                this.setState({ isLoading: false });
+            });
+        }
+    }
+
+    componentWillUnmount() {
+        const { removeEventListener } = this.props;
+
+        if (removeEventListener) {
+            removeEventListener("loaded");
+        }
+    }
+
+    render() {
+        return (
+            <div>
+                <h3>{this.props.name}</h3>
+                <div dangerouslySetInnerHTML={{ __html: this.props.about }} />
+                <div className="d-flex flex-column justify-content-center align-items-center">
+                    {!this.state.play &&
+                        <React.Fragment>
+                            <div className="btn-wrapper d-flex flex-column justify-content-center align-items-center">
+                                <a
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    href={`/games/${this.props.link}`}
+                                    onClick={() => this.setState({ isLoading: false, play: false })}
+                                    className="btn btn-primary"
+                                >
+                                    Play in New Tab
+                                </a>
+                                {this.props.hasAPK && (
+                                    <a
+                                        className="btn btn-primary"
+                                        href={`/games/${this.props.link}/${this.props.link}.apk`}
+                                        onClick={() => this.setState({ isLoading: false, play: false })}
+                                    >
+                                        Download APK
+                                    </a>
+                                )}
+                                {this.props.hasEXE && (
+                                    <a
+                                        className="btn btn-primary"
+                                        href={`/games/${this.props.link}/${this.props.link}.exe`}
+                                        onClick={() => this.setState({ isLoading: false, play: false })}
+                                    >
+                                        Download Executable
+                                    </a>
+                                )}
+                            </div>
+                            <img
+                                src={`/img/${this.props.imgUrl}`}
+                                className="game-img"
+                                alt={`${this.props.name} Screenshot`}
+                            />
+                        </React.Fragment>
                     }
-                    {this.props.hasEXE === true &&
-                      <a className="btn btn-primary" href={"/games/"+this.props.link+"/"+this.props.link+".exe"} onClick={() =>this.setState({isLoading: false, play: false})}>Download Executable </a>    
+
+                    {this.state.isLoading && this.state.play &&
+                        <React.Fragment>
+                            <div className="btn btn-primary game-loader">Loading...</div>
+                            <img
+                                src={`/img/${this.props.imgUrl}`}
+                                className="game-img"
+                                alt={`${this.props.name} Screenshot`}
+                            />
+                        </React.Fragment>
+                    }
+
+                    {this.state.play &&
+                        <Unity
+                            className={!this.state.isLoading ? "" : "d-none"}
+                            style={{ width: "1024px", height: "100%" }}
+                            unityProvider={this.props.unityProvider}
+                        />
                     }
                 </div>
-                <img src={"/img/"+this.props.imgUrl} className="game-img" alt={this.props.name +" Screenshot"}/>
-              </React.Fragment>
-            }
-            {this.state.isLoading === true &&  this.state.play === true &&
-              <React.Fragment>
-                <div className="btn btn-primary game-loader">
-                    Loading...
-                </div>
-                <img src={"/img/"+this.props.imgUrl} className="game-img" alt={this.props.name +" Screenshot"}/>
-                </React.Fragment>
-            }
-            {this.state.play === true && 
-              <Unity className={this.state.isLoading === false?"":"d-none"} height="100%" width="1024px" unityContent={this.props.content}/>
-            }
             </div>
-          </div>
         );
-      }
     }
-    
-export default unityGame;
+}
+
+export default UnityGame;

@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('../fonts/SegoeUI.woff2') format('woff2'),
+    url('../fonts/SegoeUI.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 h1,
 h2,
 h3,
@@ -105,7 +115,7 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-repeat-x: no-repeat;
+    background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
@@ -169,46 +179,77 @@ body {
 #highlights {
     padding: 30px 0;
     text-align: center;
-    justify-content: center;
-    margin: 15px auto 0px auto;
+    display: block;
+    margin: 15px auto 0 auto;
+    overflow-x: scroll;
 }
 
-#highlights img {
-    width: 60px;
+/* Dark mode styles */
+.calendar {
+    background-color: #0d1117;
+    color: #c9d1d9;
+    min-height: unset;
+    margin: auto 10px;
 }
 
-#highlights .carousel {
-    width: 100%;
+.calendar td.ContributionCalendar-label span {
+    top: -2px !important;
 }
 
-#highlights .carousel-caption {
-    position: relative;
-    right: 0%;
-    left: 0%;
+.calendar div.float-right {
+    align-items: center;
 }
 
-#highlights .carousel-indicators {
-    bottom: -20px;
+/* Contribution squares */
+.contrib-legend .legend li {
+    border-color: #30363d;
 }
 
-#highlights .award-caption {
-    color: #fff;
-    font-family: 'Advent Pro', sans-serif;
-    font-size: 20px;
-    line-height: 1;
-    font-weight: bold;
-    margin-top: 20px;
-    margin-bottom: 0;
+.calendar .contrib-column .day {
+    stroke: #161b22;
 }
 
-@media(max-width: 576px) {
-    #highlights .award-caption {
-        margin-right: auto;
-        margin-left: auto;
-        width: 70%;
+table.ContributionCalendar-grid td {
+    padding: 5pt;
+}
+
+@media(max-width: 767px) {
+    table.ContributionCalendar-grid td {
+        padding: 5pt 10pt;
     }
 }
 
+.ContributionCalendar-day {
+    border: 1px solid darkslategrey;
+}
+
+.ContributionCalendar-day[data-level='0'] {
+    background-color: #161b22;
+}
+
+.ContributionCalendar-day[data-level='1'] {
+    background-color: #0e4429;
+}
+
+.ContributionCalendar-day[data-level='2'] {
+    background-color: #006d32;
+}
+
+.ContributionCalendar-day[data-level='3'] {
+    background-color: #26a641;
+}
+
+.ContributionCalendar-day[data-level='4'] {
+    background-color: #39d353;
+}
+
+.show-on-focus {
+    display: none;
+}
+
+.contrib-column {
+    display: none;
+}
 /* End Highlights styling */
 
 /* CV styling */
@@ -224,7 +265,6 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background: #ffffffbf;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     padding-bottom: 8px;
@@ -312,10 +352,6 @@ body {
     width: 1em;
     margin-left: -1em;
     font-size: 22px;
-}
-
-#cv .Collapsible__contentOuter {
-    background: #ffffffbf;
 }
 
 #cv .is-open .Collapsible__contentOuter {
