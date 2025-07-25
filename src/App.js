@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Home from './components/home';
-import Portfolio from './components/portfolio';
+import GamesPortfolio from './components/gamesPortfolio';
+import WebsitesPortfolio from './components/websitesPortfolio';
+import Thesis from './components/thesis';
 import './styles/css/main.css';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
@@ -11,7 +13,9 @@ class App extends Component {
                 <BrowserRouter>
                     <Routes>
                         <Route path="/" element={<Home />} />
-                        <Route path="/portfolio" element={<Portfolio />} />
+                        <Route path="/games-portfolio" element={<GamesPortfolio />} />
+                        <Route path="/websites-portfolio" element={<WebsitesPortfolio />} />
+                        <Route path="/thesis" element={<Thesis />} />
                     </Routes>
                 </BrowserRouter>
             </div>

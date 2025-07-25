@@ -1,5 +1,4 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 
 class About extends React.Component {
 
@@ -8,9 +7,9 @@ class About extends React.Component {
             <React.Fragment>
                 <div className="container" id="about">
                     <div className="row">
-                        <div className="col-12 col-md-8 col-lg-9 float-left">
-                            <h1 className="section-title"> About</h1>
-                            <p>Hello! I am an artificial intelligence graduate from the University of Malta with a strong background in game development
+                        <div className="col-12">
+                            <h1 className="section-title">About</h1>
+                            <p>Hello! I am an artificial intelligence graduate from the University of Malta with a strong background in game development.
                                 I’m a fast learner who thrives on adapting to new challenges and constantly improving.</p>
                             <p>Throughout my time at Raketech, I learnt to adapt quickly, think creatively and
                                 manage a team. I quickly advanced to leading a small team with various skills and backgrounds.
@@ -32,15 +31,6 @@ class About extends React.Component {
                                 time management are the keys to success!
                             </p>
                         </div>
-                        <motion.div
-                            initial={{ rotateY: 90, opacity: 0 }}
-                            animate={{ rotateY: 0, opacity: 1 }}
-                            transition={{ duration: 0.6, delay: 0.3 }}
-                            style={{ transformStyle: 'preserve-3d' }}
-                            className="col-12 col-md-4 col-lg-3 float-right img-wrapper"
-                        >
-                            <img alt="headshot" src="/img/headshot.jpg" />
-                        </motion.div>
                     </div>
                 </div>
             </React.Fragment>

@@ -4,7 +4,7 @@ class Contact extends React.Component {
   render() {
     return (
       <React.Fragment>
-          <div id="contact" className="blue-section">
+          <div id="contact" className="green-section">
            <a target="__blank" href="https://www.linkedin.com/in/michelle-falzon/"> 
                 <img alt="linkedIn" src="/img/linkedin.png"/>
             </a>

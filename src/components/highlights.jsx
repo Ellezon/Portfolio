@@ -22,7 +22,7 @@ class Highlights extends React.Component {
 
     render() {
         return (
-            <div className="row blue-section" id="highlights">
+            <div className="row green-section" id="highlights">
                 <React.Fragment>
                     <GitHubCalendar username="Ellezon" />
                 </React.Fragment>

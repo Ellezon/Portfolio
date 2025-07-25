@@ -16,7 +16,7 @@ class Cv extends React.Component {
                                     company="Dorado Games"
                                     title="Tech Team Lead"
                                     list={[
-                                       "Working as a fullstack developer on the development of games to bug fix and implement new features.",
+                                        "Working as a full-stack developer on the development of games, bug fixing, and implementing new features.",
                                         "Managing and training a team",
                                         "Writing, enhancing and maintaining fast code, adhering to international standards",
                                         "Writing and maintaining detailed technical design and software documentation",
