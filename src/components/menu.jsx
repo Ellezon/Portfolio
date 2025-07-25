@@ -29,7 +29,7 @@ class Menu extends React.Component {
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className={classDropdownMenu + "collapse navbar-collapse"} id="navbarNav">
-                    <ul className="navbar-nav align-items-center">
+                    <ul className="navbar-nav align-items-sm-center">
                         <li className="nav-item">
                             <a className={page === "/" ? "current nav-link" : "nav-link"} href="/">About</a>
                         </li>

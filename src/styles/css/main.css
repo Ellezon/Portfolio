@@ -13,7 +13,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Advent Pro", sans-serif;
-  color: #4d5d53;
+  color: #3b4741;
   font-weight: bold;
   width: 100%;
 }
@@ -108,7 +108,7 @@ a {
 }
 @media (max-width: 768px) {
   #hero img {
-    max-width: 200px;
+    max-width: 150px;
   }
 }
 #hero h1 {
@@ -119,7 +119,7 @@ a {
 }
 @media (max-width: 991px) {
   #hero h1 {
-    font-size: 5em;
+    font-size: 3em;
   }
 }
 #hero .slogan {
